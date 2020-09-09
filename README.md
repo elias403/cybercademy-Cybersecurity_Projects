@@ -3,6 +3,6 @@ Projetos de cybersegurança para fins acadêmicos.
 
 https://cybercademy.org/project-ideas/
 
-PROGRAMMING
-  A Cryptographic Message Project
-  Simple Port Scan
+<u>PROGRAMMING<u>
+  <br>A Cryptographic Message Project
+  <br>Simple Port Scan
