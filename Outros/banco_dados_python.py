@@ -2,7 +2,7 @@ import pymysql
 #pip install PyMySQL  
 
 
-conexao_db = pymysql.connect(db='nome_bd',user='root',passwd='')
+conexao_db = pymysql.connect(db='nome_bd',user='root',passwd='',host='localhost')
 #host='localhost',user='user',password='passwd',db='db',charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor
 
 cursor = conexao_db.cursor()
@@ -16,9 +16,9 @@ cursor.execute("SELECT current_user()") #-> execute qualquer comando sql
 # suas alterações.
 conexao_db.commit()
 
-aqui = cursor.fetchall()
+saida = cursor.fetchall()
 #recuperar os resultados da query
-for x in aqui:
+for x in saida:
     print(x)
 
 # Finaliza a conexão
